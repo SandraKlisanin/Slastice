@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="583.0" prefHeight="674.9999000000025" prefWidth="721.0001220703125" styleClass="mainFxmlClass, root" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdminMenuController">
+  <children>
+    <Button layoutX="639.0" layoutY="21.0" mnemonicParsing="false" onAction="#Odjava" text="ODJAVA" />
+    <TabPane id="menu" layoutX="14.0" layoutY="57.0" prefHeight="618.0" prefWidth="694.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab onSelectionChanged="#listaOsoba" text="Korisnik">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="555.0" prefWidth="750.0">
+              <children>
+                <Label layoutX="116.0" layoutY="52.0" text="ID" textAlignment="LEFT" textFill="#410e0e" textOverrun="CLIP" underline="false">
+                           <font>
+                              <Font name="Algerian" size="20.0" />
+                           </font></Label>
+                <Label layoutX="116.0" layoutY="80.0" text="Ime" textFill="#411010" underline="false">
+                           <font>
+                              <Font name="Algerian" size="18.0" />
+                           </font></Label>
+                <Label layoutX="116.0" layoutY="106.0" text="Prezime" textFill="#611a1a" underline="false">
+                           <font>
+                              <Font name="Algerian" size="18.0" />
+                           </font></Label>
+                <Label layoutX="116.0" layoutY="132.0" text="JMBG" textFill="#671414" underline="false">
+                           <font>
+                              <Font name="Algerian" size="20.0" />
+                           </font></Label>
+                <Label layoutX="116.0" layoutY="163.0" text="Adresa" textFill="#511111" underline="false">
+                           <font>
+                              <Font name="Algerian" size="19.0" />
+                           </font></Label>
+                <Label layoutX="114.0" layoutY="190.0" text="Telefon" textFill="#742020" underline="false">
+                           <font>
+                              <Font name="Algerian" size="19.0" />
+                           </font></Label>
+                <Label layoutX="114.0" layoutY="218.0" text="Tip korisnika" textFill="#5c1414" underline="false">
+                           <font>
+                              <Font name="Algerian" size="14.0" />
+                           </font></Label>
+                <Label layoutX="114.0" layoutY="246.0" text="Korisničko ime" textFill="#7c2222" underline="false">
+                           <font>
+                              <Font name="Algerian" size="15.0" />
+                           </font></Label>
+                <Label layoutX="114.0" layoutY="274.0" text="Lozinka" textFill="#691d1d" underline="false">
+                           <font>
+                              <Font name="Algerian" size="16.0" />
+                           </font></Label>
+                <TextField fx:id="jIdK" layoutX="221.0" layoutY="48.0" prefWidth="200.0" />
+                <TextField fx:id="jImeK" layoutX="221.0" layoutY="73.0" prefWidth="200.0" />
+                <TextField fx:id="jPrezimeK" layoutX="221.0" layoutY="100.0" prefWidth="200.0" />
+                <TextField fx:id="jJMBGK" layoutX="221.0" layoutY="128.0" prefWidth="200.0" />
+                <TextField fx:id="jAdresaK" layoutX="221.0" layoutY="154.0" prefWidth="200.0" />
+                <TextField fx:id="jTelefonK" layoutX="221.0" layoutY="180.0" prefWidth="200.0" />
+                 <TextField fx:id="jTipK" layoutX="221.0" layoutY="210.0" prefWidth="200.0" />
+                <TextField fx:id="jKImeK" layoutX="221.0" layoutY="237.0" prefWidth="200.0" />
+                <TextField fx:id="jLozinkaK" layoutX="221.0" layoutY="268.0" prefWidth="200.0" />
+                <TableView fx:id="jTableK" layoutX="36.0" layoutY="325.0" onMouseClicked="#postaviPodatkeUCelijeO" prefHeight="207.0" prefWidth="623.0">
+                  <columns>
+                    <TableColumn fx:id="ColumnIdK" maxWidth="5000.0" minWidth="10.0" prefWidth="30.0" text="ID" />
+                    <TableColumn fx:id="ColumnImeK" maxWidth="5000.0" minWidth="10.0" prefWidth="68.0" text="Ime" />
+                    <TableColumn fx:id="ColumnPrezimeK" maxWidth="5000.0" minWidth="10.0" prefWidth="62.0" text="Prezime" />
+                    <TableColumn fx:id="ColumnJMBGK" maxWidth="5000.0" minWidth="10.0" prefWidth="96.0" text="JMBG" />
+                    <TableColumn fx:id="ColumnAdresaK" maxWidth="5000.0" minWidth="10.0" prefWidth="120.0" text="Adresa" />
+                    <TableColumn fx:id="ColumnTelefonK" maxWidth="5000.0" minWidth="10.0" prefWidth="72.0" text="Telefon" />
+                    <TableColumn fx:id="ColumnKImeK" maxWidth="5000.0" minWidth="10.0" prefWidth="105.0" text="Username" /> 
+                    <TableColumn fx:id="ColumnLozinkaK" prefWidth="75.0" text="Lozinka" />
+                  </columns>
+                </TableView>
+                <Button layoutX="455.0" layoutY="76.0" mnemonicParsing="false" onAction="#IsprazniPoljaO" text="Isprazni odabir" />
+                <Button layoutX="456.0" layoutY="113.0" mnemonicParsing="false" onAction="#DodajO" text="Dodaj korisnika" />
+                <Button layoutX="456.0" layoutY="184.0" mnemonicParsing="false" onAction="#UrediO" text="Uredi" />
+                <Button layoutX="456.0" layoutY="149.0" mnemonicParsing="false" onAction="#ObrisiO" text="Obriši" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+  <stylesheets>
+    <URL value="@admin.css" />
+  </stylesheets>
+</AnchorPane>

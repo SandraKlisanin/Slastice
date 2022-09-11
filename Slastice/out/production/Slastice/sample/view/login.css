@@ -1,0 +1,31 @@
+.mainFxmlClass {
+
+}
+.root {
+     -fx-background-image: url("slika1.jpg");
+}
+
+.label {
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e1c1c;
+}
+#Poruka {
+  -fx-text-fill: #910808;
+  -fx-font-weight: bold;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 ); 
+  -fx-font-size: 10px;
+}
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#c19494 10%, #e7d7d7 90%);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,0,2,0,0;
+    -fx-padding: 5 10 5 10;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#e1cfd8, #ffcce5);
+}

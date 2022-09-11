@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="370.0" style="" styleClass="mainFxmlClass, background, root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.controller.LoginController">
+  <children>
+    <Label layoutX="32.0" layoutY="82.0" prefHeight="23.0" prefWidth="74.0" text="Korisničko ime" textOverrun="ELLIPSIS" underline="false" wrapText="false" />
+    <Label layoutX="32.0" layoutY="137.0" prefWidth="74.0" text="Lozinka" />
+    <TextField fx:id="jUsername" alignment="CENTER_LEFT" editable="true" layoutX="118.0" layoutY="83.0" prefWidth="186.0" promptText="Korisničko ime" text="" />
+    <Button cancelButton="false" defaultButton="false" layoutX="222.0" layoutY="206.0" mnemonicParsing="false" onAction="#Prijavise" prefHeight="24.0" prefWidth="81.9998779296875" text="Prijava" />
+    <PasswordField fx:id="jPassword" layoutX="118.0" layoutY="135.0" prefWidth="186.0" promptText="Lozinka" />
+    <Label fx:id="Poruka" layoutX="118.0" layoutY="165.0" minHeight="12.0" prefHeight="12.0" prefWidth="186.0" text="" />
+  </children>
+  <stylesheets>
+    <URL value="@login.css" />
+  </stylesheets>
+</AnchorPane>
